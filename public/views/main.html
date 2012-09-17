@@ -1,9 +1,12 @@
-<div class="hero-unit">
-  <h1>Cheerio!</h1>
-  <p>You now have</p>
-  <ul>
-      <li ng-repeat="thing in awesomeThings">{{thing}}</li>
-  </ul>
-  <p>installed.</p>
-  <h3>Enjoy coding! - Yeoman</h3>
-</div>
+<article ng-repeat="note in notes" ng-class="{complete:note.complete}">
+	<p>
+		{{note.content}}
+		<span><a href="/{{note.id}}">[edit]</a></span>
+	</p>
+	<p class="links">
+		<a href="/{{note.id}}/complete">&#8623;</a>  
+	</p>
+	<p class="meta">Created: {{note.created_at}}</p> 
+</article>
+
+

@@ -1,9 +1,7 @@
 'use strict';
 
-testApp.controller('MainCtrl', function($scope) {
-  $scope.awesomeThings = [
-    'HTML5 Boilerplate',
-    'AngularJS',
-    'Some shit'
-  ];
+testApp.controller('MainCtrl', function($scope, Note) {
+	
+  $scope.notes = Note.query();
+
 });
