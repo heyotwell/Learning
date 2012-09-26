@@ -1,11 +1,7 @@
 'use strict';
 
 // Declare app level module which depends on filters, and services
-<<<<<<< HEAD
-var testApp = angular.module('testApp', ['notesService', 'testService'])
-=======
-var testApp = angular.module('testApp', ['notesService', 'conslog'])
->>>>>>> Stuff
+var testApp = angular.module('testApp', ['notesService', 'conslog', 'testService'])
   .config(['$routeProvider', function($routeProvider) {
     $routeProvider
       .when('/', {
@@ -17,16 +13,6 @@ var testApp = angular.module('testApp', ['notesService', 'conslog'])
       });
   }]);
 
-<<<<<<< HEAD
-testApp.factory('nametrickFactory', function() {
-  return {
-    reverse : function(name) {
-      return name.split("").reverse().join("");
-    }
-  }
-});
-=======
-
   /**
  * conslog Module
  *
@@ -37,7 +23,5 @@ angular.module('conslog', [])
     // Runs during compile
     return function(scope, elm, attrs) {
       //console.log("scope.message = " + scope.message);
-      console.log(scope, elm, attrs);
     };
   }]);
->>>>>>> Stuff
