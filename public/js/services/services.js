@@ -10,3 +10,18 @@ angular.module('notesService', ['ngResource']).
 		});
 	});
 
+/**
+ * funnyService Module
+ *
+ * Description
+ */
+angular.module('testService', []).
+	factory('MyTest', function(){
+		return {
+			ao: "Andrew",
+			foo: function(a, b){
+				return a + b;
+			}
+		}
+	});
+
